@@ -1,0 +1,202 @@
+/* Core Layout: Centers everything on the screen */
+.botanical-container {
+  max-width: 800px;
+  margin: 0 auto; /* Centers the app */
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers items horizontally */
+  color: #f8fafc;
+}
+
+/* Header Styling */
+.app-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #334155;
+  padding-bottom: 1rem;
+}
+.header-controls {
+  display: flex;
+  gap: 12px;
+}
+
+.header-controls select {
+  background: #1e293b;
+  color: white;
+  border: 1px solid #334155;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.header-controls button {
+  background: #10b981;
+  color: #0f172a;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Hero Section for Plant Title */
+.hero {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Improved Form Styling (The "Unappealing" Fix) */
+.growth-form {
+  background: #1e293b;
+  padding: 2.5rem;
+  border-radius: 16px;
+  border: 1px solid #334155;
+  width: 100%;
+  max-width: 500px; /* Limits width for better readability */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+.growth-form h3 {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #10b981;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.growth-form input, 
+.growth-form select, 
+.growth-form textarea {
+  background: #0f172a;
+  border: 1px solid #334155;
+  color: #f8fafc;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 1rem;
+  width: 100%; /* Ensures uniform width */
+  transition: border-color 0.2s;
+}
+
+.growth-form input:focus, 
+.growth-form textarea:focus {
+  border-color: #10b981;
+  outline: none;
+}
+
+.growth-form button {
+  background: #10b981;
+  color: #0f172a;
+  font-weight: 700;
+  padding: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.2s;
+}
+
+.growth-form button:hover {
+  background: #34d399;
+  transform: translateY(-2px);
+}
+
+/* Chart Container Adjustments */
+.chart-container {
+  background: #1e293b;
+  padding: 1.5rem;
+  border-radius: 20px;
+  border: 1px solid #10b981;
+  margin-top: 20px;
+  height: 400px;
+  min-height: 300px;
+  width: 100%;
+  max-width: 600px; /* Aligns with form width */
+}
+/* Styling for the scientific name in the Hero section */
+.scientific-name {
+  font-style: italic;
+  font-weight: 300;
+  opacity: 0.7;
+  font-size: 1.2rem;
+  display: block; /* Moves it to a new line for better hierarchy */
+  margin-top: 5px;
+}
+
+/* Modal Overlay for the AddPlant form */
+.modal-overlay {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Specific styling for the toggle button with icons */
+.toggle-add-btn {
+  background: #10b981;
+  color: #0f172a;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s;
+}
+
+.toggle-add-btn:hover {
+  background: #34d399;
+}
+
+/* Ensure the display area maintains the center alignment */
+.display-area {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Delete Section Styling */
+.delete-section {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #334155;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.delete-btn {
+  background: transparent;
+  color: #ef4444; 
+  border: 1px solid #ef4444;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.2s;
+  opacity: 0.6;
+}
+
+.delete-btn:hover {
+  background: #ef4444;
+  color: white;
+  opacity: 1;
+}
